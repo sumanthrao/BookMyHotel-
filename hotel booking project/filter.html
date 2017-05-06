@@ -1,0 +1,99 @@
+<html>
+    <head><title>filter.html</title>
+    <style>
+input[type=text] {
+    width: 80%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+ h1,
+        h2,
+        h3,
+        a {
+            font-weight: normal;
+            color: white;
+            margin: 0px;
+            background-color: #283593;
+        }
+h1,#div { color: white; font-family: 'Lato', sans-serif; font-size: 54px;  }
+ li {
+            font-style: comic;
+            font-weight: bold;
+            font-color: red;
+            display: inline;
+            padding: 0.5em;
+        }
+
+
+
+
+input[type=text]:focus {
+    width: 100%;
+}
+.book-button
+{
+border:1px solid #210309; -webkit-border-radius: 4px; -moz-border-radius: 4px;border-radius: 4px;width:150px;font-size:30px;font-family:lucida sans unicode, lucida grande, sans-serif; padding: 15px 15px 15px 15px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
+ background-color: #FF1008; background-image: -webkit-gradient(linear, left top, left bottom, from(#FF1008), to(#800F0F));
+ background-image: -webkit-linear-gradient(top, #FF1008, #800F0F);
+ background-image: -moz-linear-gradient(top, #FF1008, #800F0F);
+ background-image: -ms-linear-gradient(top, #FF1008, #800F0F);
+ background-image: -o-linear-gradient(top, #FF1008, #800F0F);
+ background-image: linear-gradient(to bottom, #FF1008, #800F0F);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FF1008, endColorstr=#800F0F);
+}
+.book-button-1
+{
+border:1px solid #210309; -webkit-border-radius: 4px; -moz-border-radius: 4px;border-radius: 4px;width:450px;font-size:30px;font-family:lucida sans unicode, lucida grande, sans-serif; padding: 15px 15px 15px 15px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
+ background-color: #FF1008; background-image: -webkit-gradient(linear, left top, left bottom, from(#FF1008), to(#800F0F));
+ background-image: -webkit-linear-gradient(top, #FF1008, #800F0F);
+ background-image: -moz-linear-gradient(top, #FF1008, #800F0F);
+ background-image: -ms-linear-gradient(top, #FF1008, #800F0F);
+ background-image: -o-linear-gradient(top, #FF1008, #800F0F);
+ background-image: linear-gradient(to bottom, #FF1008, #800F0F);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FF1008, endColorstr=#800F0F);
+}
+ .book-button:hover{
+ border:1px solid #a10500;
+ background-color: #9C2A2A; background-image: -webkit-gradient(linear, left top, left bottom, from(#9C2A2A), to(#E30C05));
+ background-image: -webkit-linear-gradient(top, #9C2A2A, #E30C05);
+ background-image: -moz-linear-gradient(top, #9C2A2A, #E30C05);
+ background-image: -ms-linear-gradient(top, #9C2A2A, #E30C05);
+ background-image: -o-linear-gradient(top, #9C2A2A, #E30C05);
+ background-image: linear-gradient(to bottom, #9C2A2A, #E30C05);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#9C2A2A, endColorstr=#E30C05);
+}
+        
+
+</style>
+    </head>
+    <body>
+        <div><h1>Go ahead and search your Dream City for a hotel</h1></div>
+        
+        <form ><input type="text" name="search" placeholder="Search across all major cities in india">
+        <input type="button" class="book-button" value="Go"><br><br><br>
+           Check-In Date*  :   <input type="text" required="required" placeholder="Enter your check-in date"><br>
+           Check-Out Date* :  <input type="text" required="required" placeholder="Enter your check-out date"><br>
+       <br> <h1>Filter your results..<h2>
+            Price Range    : Minimum <input type="text" style="width:20%;" name="search" placeholder="">Maximum<input type="text" style="width:20%;" name="search" placeholder="">
+           <br> <br>Hotel-Class :<select>
+  <option value="volvo">7-star</option>
+  <option value="saab">5-star</option>
+  <option value="mercedes">3-star</option>
+  <option value="audi">Budget Hotel</option>
+</select><br><br>
+Ratings :<select>
+  <option value="volvo">Tier-1[5-star]</option>
+  <option value="saab">Tier-2[more than 4 stars]</option>
+  <option value="mercedes">tier-3[more than 3 stars]</option>
+  <option value="audi">Budget Hotel</option>
+</select><br><br>
+<input type="submit" class="book-button-1" value="Apply Filters">
+</form>
+    </body>
+</html>

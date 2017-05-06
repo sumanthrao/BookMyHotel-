@@ -1,0 +1,354 @@
+<head>
+    <style>
+        h1,
+        h2,
+        h3,
+        a {
+            font-weight: normal;
+            color: white;
+            margin: 0px;
+            background-color: #283593;
+        }
+
+        #container {
+            background-color: white;
+            height: 100%;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #content {
+            overflow: auto;
+        }
+
+        #nav,
+        #feature,
+        #footer {
+            margin: 1%;
+        }
+        h1 { color: white; font-family: 'Lato', sans-serif; font-size: 54px;  }
+
+
+
+
+        .column1,
+        .column2,
+        .column3,
+        .column4 {
+            display:inline;
+            position:relative;
+            float: left;
+            margin:1%;
+
+        }
+
+        .column3 {
+            margin-right: 0%;
+        }
+
+
+        li {
+            font-style: comic;
+            font-weight: bold;
+            font-color: red;
+            display: inline;
+            padding: 0.5em;
+        }
+
+        #nav,
+        #footer {
+            background-color: #283593;
+            padding: 0.5em 0;
+        }
+
+        #feature,
+        .article {
+            height: 10em;
+            margin-bottom: 1em;
+            
+        }
+
+        #feature {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        
+        .title-text
+{
+text-shadow:1px 0px 3px rgba(79,196,255,0.4);
+font-weight:normal;font-variant:small-caps;
+color:white;letter-spacing:6pt;word-spacing:5pt;
+font-size:40px;text-align:left;align:left;font-family:lucida grande, sans-serif;line-height:2;
+}
+.buttons{
+text-shadow:1px 0px 6px rgba(79,196,255,0.4);
+font-weight:normal;
+color:white;letter-spacing:3pt;word-spacing:8pt;display:inline;
+font-size:15px;text-align:left;font-family:lucida sans unicode, lucida grande, sans-serif;line-height:2;
+}
+
+ .book-button
+{
+border:2px solid #210309; -webkit-border-radius: 4px; -moz-border-radius: 4px;border-radius: 4px;font-size:30px;font-family:lucida sans unicode, lucida grande, sans-serif; padding: 15px 15px 15px 15px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
+ background-color: #FF1008; background-image: -webkit-gradient(linear, left top, left bottom, from(#FF1008), to(#800F0F));
+ background-image: -webkit-linear-gradient(top, #FF1008, #800F0F);
+ background-image: -moz-linear-gradient(top, #FF1008, #800F0F);
+ background-image: -ms-linear-gradient(top, #FF1008, #800F0F);
+ background-image: -o-linear-gradient(top, #FF1008, #800F0F);
+ background-image: linear-gradient(to bottom, #FF1008, #800F0F);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FF1008, endColorstr=#800F0F);
+}
+
+ .book-button:hover{
+ border:1px solid #a10500;
+ background-color: #9C2A2A; background-image: -webkit-gradient(linear, left top, left bottom, from(#9C2A2A), to(#E30C05));
+ background-image: -webkit-linear-gradient(top, #9C2A2A, #E30C05);
+ background-image: -moz-linear-gradient(top, #9C2A2A, #E30C05);
+ background-image: -ms-linear-gradient(top, #9C2A2A, #E30C05);
+ background-image: -o-linear-gradient(top, #9C2A2A, #E30C05);
+ background-image: linear-gradient(to bottom, #9C2A2A, #E30C05);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#9C2A2A, endColorstr=#E30C05);
+}
+        
+
+       
+        #footer {
+            color: grey;
+        }
+
+        #content {
+            vertical-align: text-bottom;
+        }
+
+        .offer {
+            position:relative;
+            display: inline-block;
+            width: 20%;
+            margin: 1%;
+            border: solid 0.01em;
+            height: 60%;
+            float:left;
+            
+            border-radius: 7px;
+        }
+         
+        .image{
+          height:200px;
+          width:200px;
+        }
+        .article {
+            border-radius: 25px;
+        }
+        .img-holder{
+          margin-top:2%;
+          background-color: white;
+          
+          margin:0 auto;
+          
+        }
+        body {
+            text-align: center;
+        }
+
+        
+ .topbar{
+     margin-top:2%;
+          background-color: #283593;
+          width:100%;
+          margin:0 auto;
+          
+ }
+ .images{
+        display: inline-block;
+        
+            
+     
+ }
+ * {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  width:1000 px;
+  height:350px;
+  position: relative;
+  margin: auto;
+  align:center;
+}
+
+/* Caption text */
+.text {
+  color: #140c0c;
+  font-size: 15px;
+  
+  position: absolute;
+  
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div class="topbar" style="align:left;">
+                <span class="title-text">BookMyHotel</span>
+                <div class="buttons">
+                    <a href="cancellation.html">Cancellation</a>
+                    <a href="#">Tour Packages</a>
+                    <a href="#">About Us</a>
+                    <a href="register.php">Sign Up</a>
+                    <a href="login.php">Log In</a>
+                    
+                    
+                    
+                    
+                    <a href="#">My Account</a><hr>
+                    
+                </div>
+                </div>
+                <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="beach1.jpg" style="width:800px; height:350px ">
+  <div class="text">Enjoy the colorful moments with friends in beaches across india!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="image12.jpg" style="width:800px; height:350px">
+  <div class="text">Experience world-class luxury hotels </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="image11.jpg" style="width:800px; height:350px; align:middle;">
+  <div class="text">Home away from home luxury hotels</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+
+            
+         
+
+            <div id="content"><br>
+                <div id="feature">
+                    <p><h1>You'll find some great offers here.</h1></p>
+                    
+                </div >
+                <div class="offers">
+                <div class="article column1">
+                    <a href=a.html><img  src="beachoffer.jpg" class="images" width="300px" height="150px"></a>
+                </div>
+                <div class="article column2">
+                    <a href=#><img src="45off.jpg" class="images" width="300px" height="150px"></a>
+                </div>
+                <div class="article column3">
+                    <a href=#><img src="greatdeals.jpg" class="images" width="300px" height="150px"></a>
+                </div>
+                 <div class="article column4">
+                  <a href=#>  <img src="off2.jpg" class="images" width="300px" height="150px"></a>
+                </div>
+            </div>
+            <div >
+                <a href="listings.html" class="book-button" >
+                    BOOK NOW
+                </a>
+            </div>
+            <div id="about us">
+                <h3 style="text-align:center">
+                    About Us
+                </h3>
+                <p>
+                    we Offer service in <br>
+                    <ul><li>Travels</li>
+                    <li>Hotels</li>
+                    <li>Tourist packages</li>
+                    <li>Homestays</li>
+                    <li>Foreign trips</li>
+                    <li>Foreign hotels</li></ul>
+                </p>
+                </div>
+
+            <div id="footer" style="margin-top:50px">
+                <p><a href="cancellation.html" style="color:grey;text-decoration:none;margin-top:10%;">Privacy Policy</a></p>
+            </div><script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+        </div>
+</body>
